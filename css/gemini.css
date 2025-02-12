@@ -1,0 +1,66 @@
+        /* .testimonial-grid:first-child{
+            background-color: yellow;
+        }
+        .testimonial-grid:last-child{
+            background-color: pink;
+        } */
+
+
+        /* Testimonials Section */
+        /* .testimonials {
+            padding: 5rem 1rem;
+            overflow: hidden;
+            position: relative;
+            background: #f8f9fa;
+        }
+
+        .testi {
+            display: inline-flex;
+            width: 200%;
+            animation: scroll 20s linear infinite;
+            gap: 0; Remove gap between grids
+        }
+
+        .testimonial-grid {
+            flex: 0 0 50%; Each grid takes half the container width
+            padding: 0 1rem; Add side padding
+            display: inline-flex;
+            gap: 20px; Maintain gap between cards
+        }
+
+        .testimonial-card {
+            flex: 0 0 calc(25% - 15px); 4 cards per row with gaps
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            white-space: normal;
+        }
+
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        Pause animation on hover
+        .testi:hover {
+            animation-play-state: paused;
+        }
+
+        Dark theme adjustment
+        body.dark-theme .testimonial-card {
+            background: #2d2d2d;
+        }
+
+        Responsive adjustments
+        @media (max-width: 768px) {
+            .testimonial-card {
+                flex: 0 0 calc(50% - 10px); 2 cards per row on mobile
+            }
+        } */
+
+        /* @media (max-width: 480px) {
+            .testimonial-card {
+                flex: 0 0 100%; 1 card per row on small screens
+            }
+        } */

@@ -968,6 +968,9 @@
                     dropdown.classList.remove('hover');
                 });
             }
+            if (navigator.userAgent.includes("Chrome")) {
+                document.body.style.zoom = "1"; // Adjust scaling as needed
+            }
         });
         
     </script>

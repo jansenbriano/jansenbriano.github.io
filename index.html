@@ -6,9 +6,32 @@
     <title>Your Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        html{
-            font-size: 16px;
+         :root {
+            --primary-color: #ffffff; /* DONE */
+            --secondary-color: #2d3436; /* DONE */
+            --logo-color: #74b9ff; /* DONE */
+            --text-color: #333;
+            --text-light: #666;
+            --bg-color: #ffffff; /* DONE */
+            --bg-skills: #2d3436; /* DONE */
+            --skills-item-color: #404a50;
+            --button-color: #6c5ce7; /* DONE */
+            --hero-border-color: #a363d9;
+/*             --shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+/*             --transition: all 0.3s ease; */
         }
+
+/*         [data-theme="dark"] {
+            --primary-color: #6c63ff;
+            --secondary-color: #a594f9;
+            --accent-color: #9b5de5;
+            --text-color: #f8f9fa;
+            --text-light: #adb5bd;
+            --bg-color: #1a1a1a; DONE
+            --bg-skills: #2d2d2d; DONE
+            --border-color: #444;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        } */
         /* Reset and Base Styles */
         * {
             margin: 0;
@@ -22,7 +45,7 @@
             zoom: 1;
             line-height: 1.6;
             color: #333;
-            background-color: #f8f9fa;
+            background-color: var(--bg-color);/*DONE*/
         }
 
         /* Header Styles */
@@ -31,9 +54,9 @@
             top: 0;
             width: 100%;
             z-index: 1000;
-            background-color: #2d3436;
+            background-color: var(--secondary-color);/*DONE*/
             box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-            border-bottom: var(--gap) solid #a363d9;
+            border-bottom: var(--gap) solid var(--hero-border-color);
             color: white;
             padding: 0.5rem 0;
             height: 60px; /* Compact navbar height */
@@ -53,7 +76,7 @@
         .logo {
             font-size: 1.5rem;
             font-weight: bold;
-            color: #74b9ff;
+            color: var(--logo-color); /*DONE*/
             text-decoration: none;
         }
 
@@ -124,7 +147,7 @@
         }
 
         input:checked + .theme-slider {
-            background-color: #6c5ce7;
+            background-color: var(--button-color);
         }
 
         input:checked + .theme-slider:before {
@@ -140,7 +163,7 @@
                 top: 100%;
                 left: 0;
                 right: 0;
-                background-color: #ffffff;
+                background-color: var(--background-color;
                 padding: 0 0 1rem 0;
                 /* box-shadow: 0 5px 10px rgba(0,0,0,0.2); */
                 z-index: 999;
@@ -179,7 +202,7 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            background: linear-gradient(135deg, #6c5ce7, #a363d9);
+            background: linear-gradient(135deg, var(--button-color), var(--hero-border-color); /* 6c5ce7= button color */
             color: white;
             padding: 0 1rem;
             margin-top: 60px;
@@ -199,7 +222,7 @@
             display: inline-block;
             padding: 1rem 2rem;
             background-color: white;
-            color: #6c5ce7;
+            color: var(--button-color);
             text-decoration: none;
             border-radius: 5px;
             font-weight: bold;
@@ -245,7 +268,7 @@
 
         /* Skills Section */
         .skills {
-            background-color: #2d3436;
+            background-color: var(--bg-skills);
             color: white;
             padding: 5rem 1rem;
             text-align: center;
@@ -261,7 +284,7 @@
         }
 
         .skill-item {
-            background-color: #404a50;
+            background-color: var(--skills-item-color);
             padding: 0.5rem 1rem;
             border-radius: 20px;
         }
@@ -346,7 +369,7 @@
         .metric .counter {
             font-size: 2.5rem;
             font-weight: bold;
-            color: #6c5ce7;
+            color: var(--button-color);
         }
 
         /* Contact Section */
@@ -372,7 +395,7 @@
         }
 
         button[type="submit"] {
-            background-color: #6c5ce7;
+            background-color: var(--button-color);
             color: white;
             padding: 1rem 2rem;
             border: none;
@@ -383,7 +406,7 @@
 
         /* Footer Section */
         footer {
-            background-color: #2d3436;
+            background-color: var(--secondary-color);
             color: white;
             text-align: center;
             padding: 3rem 1rem;
@@ -449,7 +472,7 @@
 
         .loader .spinner {
             border: 5px solid #f3f3f3;
-            border-top: 5px solid #6c5ce7;
+            border-top: 5px solid var(--button-color);
             border-radius: 50%;
             width: 50px;
             height: 50px;
